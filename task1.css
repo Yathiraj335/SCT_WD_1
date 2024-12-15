@@ -1,0 +1,70 @@
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    padding: 100px;
+    height: 100vh;
+}
+
+#home {
+    background-color: lavender;
+}
+#about {
+    background-color: #cce7ff;
+}
+#services {
+    background-color: #ffdfba;
+}
+#contact {
+    background-color: #d1f7d6;
+}
+
+/* Navigation Menu Styles */
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+    box-shadow: 0 4px 2px -2px rgba(0,0,0,0.2);
+}
+
+#navbar.scrolled {
+    background-color: #333;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    list-style-type: none;
+    margin: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    font-size: 18px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #fff;
+    color: #333;
+    border-radius: 5px;
+}
+
+/* Style when scrolled */
+.nav-links a.scrolled {
+    color: white;
+}
